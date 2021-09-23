@@ -6,7 +6,6 @@ if (process.argv.length < 3) {
 }
 const dbName = 'puhelinluettelo'
 const password = process.argv[2] //second argument will be the password
-//HGqKB5cI9UBGXH5S
 const url = `mongodb+srv://puhelinluettelo:${password}@cluster0.ihcdq.mongodb.net/${dbName}?retryWrites=true&w=majority`
 
 mongoose.connect(url)
